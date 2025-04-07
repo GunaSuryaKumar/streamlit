@@ -1,0 +1,41 @@
+# Core Dependencies
+streamlit>=1.12.0
+pandas>=1.3.0
+numpy>=1.24.0
+PyPDF2>=3.0.0
+pdf2image>=1.16.0
+pytesseract>=0.3.10
+python-dotenv>=1.0.0
+opencv-python-headless>=4.6.0  # Use headless version to avoid GUI dependencies
+
+# ML and AI Dependencies
+torch>=1.10.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+transformers>=4.0.0
+datasets>=2.0.0
+bitsandbytes==0.42.0
+accelerate>=0.26.0
+mistralai>=0.0.1
+
+# Document Processing
+unstructured[all-docs]>=0.4.0
+lxml>=4.6.0
+Pillow>=8.0.0
+PyMuPDF>=1.18.0
+pdfplumber
+
+# Development Tools
+ipython>=8.0.0
+
+# Optional Dependencies
+beautifulsoup4>=4.9.3  # For table parsing
+html5lib>=1.1  # Alternative HTML parser
+tabulate>=0.8.9  # For table formatting
+nltk
+
+# Note: Some packages might require system-level dependencies:
+# - poppler-utils (for pdf2image)
+# - tesseract-ocr (for pytesseract)
+# These cannot be installed on Streamlit Community Cloud.
+# Ensure your code handles cases where these dependencies are not available.
